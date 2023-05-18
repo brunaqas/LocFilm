@@ -16,6 +16,13 @@
 
 <body>
 
+  <style>
+    body {
+      background-image: url(https://www.americamagazine.org/sites/default/files/main_image/Top%2025%20Films%20FINAL.png);
+      background-size:auto;
+    }
+  </style>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LocFilm</a>
@@ -44,22 +51,27 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="filtrar" aria-label="filtrar">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <button class="btn btn-secondary" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Cadastrar Filme
-    </button>
-
+    <div class="d-flex justify-content-end mt-3">
+      <div class="ms-auto">
+        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Cadastrar Filme
+        </button>
+      </div>
+    </div>
     <div id="tarefas" class="row mx-auto my-2 g-3">
     </div> <!-- row -->
-
   </main>
+  
+  
+  
+  
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,7 +84,7 @@
         <div class="modal-body">
           <div class="row mt-2 g-3">
             <div class="col-12">
-              <input id="titulo" type="text" class="form-control" placeholder="título" aria-label="título">
+              <input id="titulo" type="text" class="form-control" placeholder="Título" aria-label="título">
             </div>
             <div class="col-12">
               <input id="descricao" type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
